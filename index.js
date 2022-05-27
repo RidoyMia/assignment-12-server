@@ -6,7 +6,7 @@ require('dotenv').config()
 const port =  process.env.PORT || 9000
 app.use(cors())
 app.use(express.json())
-////
+
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = `mongodb+srv://${process.env.PRIVATE_KEY}:${process.env.PRIVET_USER}@cluster0.c5u7y.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
@@ -55,7 +55,7 @@ async function run(){
       })
 
 
-//
+
 
 
       app.put('/User/admin/:email',async(req,res)=>{
