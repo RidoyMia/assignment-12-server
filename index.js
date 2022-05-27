@@ -35,7 +35,7 @@ async function run(){
           const service = await Servicescollection.findOne(query);
           res.send(service);
       });
-    //
+  
       app.put('/User/:email',async(req,res)=>{
         const email = req.params.email;
         console.log(email)
