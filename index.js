@@ -32,6 +32,7 @@ async function run(){
         //     const result = await Servicescollection.findOne(query);
         //     res.send(result)
         // })
+        //appi created
         app.get('/service/:id', async (req, res) => {
           const id = req.params.id;
           console.log(id);
